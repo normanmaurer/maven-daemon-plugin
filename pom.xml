@@ -20,14 +20,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>me.maurer.norman</groupId>
-  <artifactId>maven-daemon-plugin</artifactId>
+  <artifactId>daemon-maven-plugin</artifactId>
   <name>Maven Daemon Plugin</name>
   <version>0.1-SNAPSHOT</version>
   <description></description>
   <url>https://github.com/normanmaurer/maven-daemon-plugin</url>
   <inceptionYear>2011</inceptionYear>
-  <packaging>jar</packaging>
-
+  <packaging>maven-plugin</packaging>
+  <prerequisites>
+    <maven>2.0.6</maven>
+  </prerequisites>
+  
   <build>
     <plugins>
       <plugin>
